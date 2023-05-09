@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../assets/fonts/Inter.ttf');
+}
+
+@font-face {
+    font-family: 'LexendDeca';
+    src: url('../assets/fonts/LexendDeca.ttf');
+}
+
+body{
+    background: hsl(233, 47%, 7%);
+    padding: 10% 0 5% 0;
+}
+
+.container{
+    margin: auto;
+    width: 72.5%;
+    background: hsl(244, 38%, 16%);
+    border-radius: 10px;
+}
+
+.columns-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.data-container{
+    padding: 20px 0 20px 0;
+}
+
+.data-title-container{
+    padding: 60px 60px 30px 60px;
+}
+
+.data-title{
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 37.5px;
+    color: hsl(0, 0%, 100%);
+}
+
+.data-title span{
+    color: hsl(277, 64%, 61%);
+}
+
+.data-main-paragraph-container{
+    padding: 10px 60px 50px 60px;
+}
+
+.data-main-paragraph{
+    font-family: 'LexendDeca';
+    font-weight: 400;
+    font-size: 15px;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.data-statistics-container{
+    padding: 20px 60px 60px 60px;
+}
+
+.columns-data-statistics{
+    display: grid;
+    grid-template-columns: 2fr 2fr 1.5fr
+}
+
+.data-number p{
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 26px;
+    color: hsl(0, 0%, 100%);
+}
+
+.data-text p{
+    font-family: 'LexendDeca';
+    font-weight: 400;
+    font-size: 15px;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.images-container{
+    background-image: url('../assets/images/image-header-desktop.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 10px;
+}
+
+.color-image-container{
+    background-color: hsl(277, 64%, 35%);
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 10px;
+}
+
+.footer-page{
+    padding-top: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-page p{
+    color: hsl(0, 0%, 100%);
+    font-family: 'LexendDeca';
+}
+
+.footer-page p a{
+    text-decoration: none;
+    color: hsla(0, 0%, 100%, 0.75);
+    transition: all 500ms ease;
+}
+
+.footer-page p a:hover{
+    color: hsl(277, 64%, 61%);
+}
+
+@media screen and (max-width: 768px){
+    body{
+        padding: 10% 0 10% 0;
+    }
+
+    .container{
+        margin: auto;
+        width: 90%;
+    }
+
+    .data-container{
+        padding: 240px 0 0 0;
+    }
+
+    .columns-container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .data-title-container{
+        width: 100%;
+        padding: 60px 0 10px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .data-title{
+        width: 250px;
+        font-size: 26px;
+        text-align: center;
+    }
+
+    .data-main-paragraph-container{
+        width: 100%;
+        padding: 15px 0 15px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .data-main-paragraph{
+        width: 250px;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .columns-data-statistics{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .data-companies{
+        padding: 10px 0 15px 0;
+    }
+
+    .data-templates{
+        padding: 15px 0 15px 0;
+    }
+
+    .data-queries{
+        padding: 15px 0 5px 0;
+    }
+
+    .data-number p{
+        text-align: center;
+        font-size: 26px;
+    }
+    
+    .data-text p{
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .images-container{
+        position: absolute;
+        height: 260px;
+        width: 90%;
+        background-image: url('../assets/images/image-header-mobile.jpg');
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+    
+    .color-image-container{
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+
+    .footer-page{
+        padding-top: 30px;
+    }
+}
